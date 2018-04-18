@@ -18,6 +18,8 @@ services:
     entrypoint: "./wait-for-it.sh mysql_kamailio:3306 -- ./entrypoint.sh"
     depends_on:
       - mysql_kamailio
+    dns:
+      - 127.0.0.1
   
   mysql_siremis:
     image: mysql

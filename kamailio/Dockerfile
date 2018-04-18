@@ -6,3 +6,4 @@ COPY ./entrypoint.sh /
 
 RUN apk update && \
     apk add mariadb-client
+
