@@ -1,0 +1,9 @@
+$ttl 38400
+company-a.ch.	IN	SOA	company-a.ch. admin.company-a.ch. (
+			1524064219
+			10800
+			3600
+			604800
+			38400 )
+company-a.ch.	IN	NS	company-a.ch.
+company-a.ch.	IN	A	10.0.0.2
