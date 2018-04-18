@@ -1,3 +1,0 @@
-grub_path=grub
-menu_file=/boot/grub/menu.lst
-install=(hd0)
