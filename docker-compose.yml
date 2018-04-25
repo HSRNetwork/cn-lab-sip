@@ -11,11 +11,11 @@ services:
     build: ./kamailio
     ports:
       - 5060:5060/udp
-      - 5060:5060
+      - 5060:5060/tcp
       - 5061:5061
     volumes:
       - ./data/kamailio:/etc/kamailio
-    entrypoint: "./wait-for-it.sh mysql_kamailio:3306 -- ./entrypoint.sh"
+    entrypoint: "./entrypoint.sh"
     depends_on:
       - mysql_kamailio
   
@@ -30,3 +30,12 @@ services:
     env_file: ./kamailio/mysql.env
     volumes:
       - ./data/mysql_kamailio:/var/lib/mysql
+
+  bind:
+    image: sameersbn/bind
+    ports:
+      - 53:53/udp
+      - 53:53/tcp
+      - 10000:10000
+    volumes:
+      - ./data/bind:/data
