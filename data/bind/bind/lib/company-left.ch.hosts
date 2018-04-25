@@ -1,0 +1,11 @@
+$ttl 38400
+company-left.ch.	IN	SOA	company-left.ch. admin.company-left.ch. (
+			1524663199
+			10800
+			3600
+			604800
+			38400 )
+company-left.ch.	IN	NS	company-left.ch.
+company-left.ch.	IN	A	155.11.1.6
+_sip._tcp.company-left.ch.	IN	SRV	1 100 5060 company-left.ch.
+_sip._udp.company-left.ch.	IN	SRV	1 100 5060 company-left.ch.

@@ -1,0 +1,11 @@
+$ttl 38400
+company-right.ch.	IN	SOA	company-right.ch. admin.company-right.ch. (
+			1524663090
+			10800
+			3600
+			604800
+			38400 )
+company-right.ch.	IN	NS	company-right.ch.
+company-right.ch.	IN	A	155.11.2.6
+_sip._tcp.company-right.ch.	IN	SRV	1 100 5060 company-right.ch.
+_sip._udp.company-right.ch.	IN	SRV	1 100 5060 company-right.ch.
