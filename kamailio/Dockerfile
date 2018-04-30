@@ -4,5 +4,4 @@ LABEL maintainer="sebastian.hug@ins.hsr.ch"
 COPY ./entrypoint.sh /
 
 RUN apt update && \
-    apt install -y mariadb-client
-
+    apt install -y mariadb-client nano
