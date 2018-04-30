@@ -3,5 +3,6 @@ LABEL maintainer="sebastian.hug@ins.hsr.ch"
 
 COPY ./entrypoint.sh /
 
-RUN apk update && \
-    apk add mariadb-client
+RUN apt update && \
+    apt install -y mariadb-client
+

@@ -20,13 +20,13 @@ services:
       - mysql_kamailio
   
   mysql_siremis:
-    image: mysql
+    image: mysql:5.7.22
     env_file: ./siremis/mysql.env
     volumes:
       - ./data/mysql_siremis:/var/lib/mysql
   
   mysql_kamailio:
-    image: mysql
+    image: mysql:5.7.22
     env_file: ./kamailio/mysql.env
     volumes:
       - ./data/mysql_kamailio:/var/lib/mysql
