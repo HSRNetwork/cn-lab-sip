@@ -8,6 +8,7 @@ else
     echo "Database not initialized. Initializing."
     mysqladmin -u root -h mysql_kamailio --password=Eav9Coh8xaChei9eangoz5Laiquee7tahre9daetho8shu6ohthaidoh5ohr4ao1 --force drop kamailio
     kamdbctl create
+    mysql -u root -h mysql_kamailio --password=Eav9Coh8xaChei9eangoz5Laiquee7tahre9daetho8shu6ohthaidoh5ohr4ao1 < ./init.sql
 fi
 
 kamailio -DD -E
