@@ -1,12 +1,6 @@
 version: "3.4"
 
 services:
-  siremis:
-    build: ./siremis
-    ports:
-      - 8080:80
-    entrypoint: "apache2ctl -DFOREGROUND"
-
   kamailio:
     build: ./kamailio
     ports:
@@ -18,12 +12,6 @@ services:
     entrypoint: "./entrypoint.sh"
     depends_on:
       - mysql_kamailio
-  
-  mysql_siremis:
-    image: mysql:5.7.22
-    env_file: ./siremis/mysql.env
-    volumes:
-      - ./data/mysql_siremis:/var/lib/mysql
   
   mysql_kamailio:
     image: mysql:5.7.22
