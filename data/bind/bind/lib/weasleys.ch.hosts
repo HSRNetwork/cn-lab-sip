@@ -1,0 +1,11 @@
+$ttl 38400
+weasleys.ch.	IN	SOA	weasleys.ch. admin.weasleys.ch. (
+			1524663199
+			10800
+			3600
+			604800
+			38400 )
+weasleys.ch.	IN	NS	weasleys.ch.
+weasleys.ch.	IN	A	155.11.1.6
+_sip._tcp.weasleys.ch.	IN	SRV	1 100 5060 weasleys.ch.
+_sip._udp.weasleys.ch.	IN	SRV	1 100 5060 weasleys.ch.

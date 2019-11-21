@@ -1,0 +1,11 @@
+$ttl 38400
+zonkos.ch.	IN	SOA	zonkos.ch. admin.zonkos.ch. (
+			1524663090
+			10800
+			3600
+			604800
+			38400 )
+zonkos.ch.	IN	NS	zonkos.ch.
+zonkos.ch.	IN	A	155.11.2.6
+_sip._tcp.zonkos.ch.	IN	SRV	1 100 5060 zonkos.ch.
+_sip._udp.zonkos.ch.	IN	SRV	1 100 5060 zonkos.ch.
