@@ -1,4 +1,4 @@
-version: "3.4"
+version: "3.7"
 
 services:
   kamailio:
@@ -12,7 +12,7 @@ services:
     entrypoint: "./entrypoint.sh"
     depends_on:
       - mysql_kamailio
-  
+
   mysql_kamailio:
     image: mysql:5.7.22
     env_file: ./kamailio/mysql.env
